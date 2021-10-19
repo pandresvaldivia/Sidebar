@@ -1,0 +1,51 @@
+.sidebar {
+	background: var(--white);
+	inline-size: 15.5rem;
+	block-size: 100vh;
+}
+
+.sidebar-top {
+	display: flex;
+	block-size: 4rem;
+	align-items: center;
+	padding-inline-end: 0.5rem;
+	padding-inline-start: 0.5rem;
+}
+
+.sidebar-handler {
+	background: transparent;
+	border: none;
+	block-size: 24px;
+	inline-size: 24px;
+	padding: 0.75rem;
+	box-sizing: content-box;
+}
+
+.sidebar-header {
+	display: flex;
+	align-items: center;
+}
+
+.sidebar-header a {
+	text-decoration: none;
+}
+
+.sidebar-header p {
+	color: var(--black);
+	padding-inline-end: 0.5rem;
+	padding-inline-start: 0.5rem;
+	padding-block-end: 0.75rem;
+	padding-block-start: 0.75rem;
+	margin: 0;
+}
+
+.sidebar-logo {
+	margin: 0;
+	block-size: 1.5rem;
+	inline-size: 1.5rem;
+}
+
+.sidebar-logo img {
+	vertical-align: middle;
+	inline-size: 100%;
+}

@@ -1,0 +1,39 @@
+.menu-list {
+	list-style: none;
+	padding: 0;
+	padding-inline-end: 0.5rem;
+	margin: 0;
+}
+
+.menu-item {
+	padding-inline-start: 1.25rem;
+	padding-inline-end: 0.5rem;
+	padding-block-end: 0.75rem;
+	padding-block-start: 0.75rem;
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	border-radius: 0 0.75rem 0.75rem 0;
+	-webkit-border-radius: 0 0.75rem 0.75rem 0;
+	-moz-border-radius: 0 0.75rem 0.75rem 0;
+	-ms-border-radius: 0 0.75rem 0.75rem 0;
+	-o-border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.menu-item.is-active {
+	background: var(--secondary);
+	color: var(--primary);
+}
+
+.menu-item.is-active svg > * {
+	stroke: var(--primary);
+}
+
+.menu-title {
+	font: var(--small);
+	color: var(--black);
+	margin-block-end: 1rem;
+	margin-block-start: 1rem;
+	padding-inline-end: 0.5rem;
+	padding-inline-start: 0.5rem;
+}
