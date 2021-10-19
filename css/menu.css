@@ -11,13 +11,24 @@
 	padding-block-end: 0.75rem;
 	padding-block-start: 0.75rem;
 	display: flex;
-	align-items: center;
-	gap: 1.25rem;
 	border-radius: 0 0.75rem 0.75rem 0;
 	-webkit-border-radius: 0 0.75rem 0.75rem 0;
 	-moz-border-radius: 0 0.75rem 0.75rem 0;
 	-ms-border-radius: 0 0.75rem 0.75rem 0;
 	-o-border-radius: 0 0.75rem 0.75rem 0;
+	overflow: hidden;
+	cursor: pointer;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.menu-itemContent {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 1.25rem;
 }
 
 .menu-item.is-active {
@@ -29,6 +40,15 @@
 	stroke: var(--primary);
 }
 
+.menu-item:hover {
+	background: var(--secondary);
+	color: var(--primary);
+}
+
+.menu-item:hover svg > * {
+	stroke: var(--primary);
+}
+
 .menu-title {
 	font: var(--small);
 	color: var(--black);
@@ -36,4 +56,8 @@
 	margin-block-start: 1rem;
 	padding-inline-end: 0.5rem;
 	padding-inline-start: 0.5rem;
+}
+
+.sidebar.is-collapse .menu-title {
+	display: none;
 }

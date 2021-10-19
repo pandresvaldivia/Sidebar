@@ -2,6 +2,16 @@
 	background: var(--white);
 	inline-size: 15.5rem;
 	block-size: 100vh;
+	overflow: hidden;
+	transition: inline-size 0.5s;
+	-webkit-transition: inline-size 0.5s;
+	-moz-transition: inline-size 0.5s;
+	-ms-transition: inline-size 0.5s;
+	-o-transition: inline-size 0.5s;
+}
+
+.sidebar.is-collapse {
+	inline-size: 4rem;
 }
 
 .sidebar-top {
@@ -17,13 +27,19 @@
 	border: none;
 	block-size: 24px;
 	inline-size: 24px;
-	padding: 0.75rem;
+	margin: 0.75rem;
+	padding: 0;
 	box-sizing: content-box;
+	cursor: pointer;
 }
 
 .sidebar-header {
 	display: flex;
 	align-items: center;
+}
+
+.sidebar.is-collapse .sidebar-header {
+	display: none;
 }
 
 .sidebar-header a {
@@ -37,6 +53,7 @@
 	padding-block-end: 0.75rem;
 	padding-block-start: 0.75rem;
 	margin: 0;
+	white-space: nowrap;
 }
 
 .sidebar-logo {
@@ -46,6 +63,5 @@
 }
 
 .sidebar-logo img {
-	vertical-align: middle;
 	inline-size: 100%;
 }
